@@ -75,7 +75,7 @@ class World {
 
         const geometryFloor = new THREE.PlaneGeometry(20, 20);
         const materialFloor = new THREE.MeshPhongMaterial({
-            color: 0x343766,
+            color: 0xd78f00,
             side: THREE.DoubleSide,
         });
 
@@ -90,7 +90,8 @@ class World {
         window.addEventListener("resize", () => 
             this.onWindowResized(this.renderer, this.camera)
         );
-    }
+
+    }//constructor
 
     animation(time) {
         this.renderer.render(this.scene, this.camera);
